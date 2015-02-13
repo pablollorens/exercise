@@ -1,0 +1,23 @@
+{
+    "name"              : "tidigraphics/assignment",
+    "description"       : "TiDi Graphics Assignment",
+    "require": {
+        "silex/silex": "~1.2",
+        "twig/twig": "~1.18",
+        "symfony/twig-bridge": "~2.6",
+        "propel/propel-service-provider": "2.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tidi\\": "src/Tidi"
+        },
+        "classmap": ["generated-classes/"]
+    },
+    "authors"           : [
+        {
+            "name"  : "TiDi Graphics",
+            "email" : "project@tidi.nl"
+        }
+    ],
+    "minimum-stability" : "dev"
+}

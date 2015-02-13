@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database
+        name="searchengine"
+        defaultIdMethod="native"
+        >
+    <!-- table definitions go here -->
+    <table name="store" phpName="Store">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+        <column name="name" type="varchar" size="255" required="true"/>
+        <column name="latitude" type="double" required="true"/>
+        <column name="longitude" type="double" required="true"/>
+        <column name="address" type="varchar" size="255" required="false"/>
+        <column name="postalcode" type="varchar" size="255" required="false"/>
+        <column name="city" type="varchar" size="255" required="true"/>
+        <column name="is_open_on_sunday" type="enum" required="true" defaultValue='N' valueSet="Y,N"/>
+    </table>
+</database>
